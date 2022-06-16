@@ -26,9 +26,10 @@ result is 0,1,0,1
 PS.: Include Pytest unit testing with at least 2 Test Cases
 
 
-## SOLUTION
+## SOLUTIONS
 
 The solution for the three problems presented is detaild below:
+
 
 ### Item 1
 
@@ -40,10 +41,35 @@ find_repeated_numbers(): Parametrized Function that receives two lists and retur
 
 ### Item 1: PYTEST
 
-File: test/test_item1.py
+File: tests/test_item1.py
 
-Usage: pytest -v test/test_item.py (7 Tests)
+Usage: pytest -v tests/test_item1.py (7 Tests)
 
-Each Test Case is documented as docstring on the test file.
+Each Test Case is documented as docstring in the test file.
 
- 
+
+### Item 2
+
+<Under Development>
+
+### Item2: PYTEST
+
+<Under Development>
+
+
+### Item 3
+
+File: src/item3.py
+
+Usage:
+get_min_permutations(): Parametrized Function that receives a list of Coin Flips (list with 0s and 1s) and returns the minimum amount of permutations to change the sequence to an interspersed list.
+
+Interspersed list: Alternating list of 0s and 1s.
+
+### Item 3: PYTEST
+
+File: tests/test_item3.py
+
+Usage: pytest -v tests/test_item3.py (6 Tests)
+
+Each Test case is documented as doctring in the test file.
