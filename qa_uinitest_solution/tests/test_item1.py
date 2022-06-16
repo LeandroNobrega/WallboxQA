@@ -1,5 +1,5 @@
 import random
-from solution1 import find_repeated_numbers, EntryListException
+from ..src.find_repeated_numbers import find_repeated_numbers, EntryListException
 
 
 def test_basic():
@@ -9,7 +9,7 @@ def test_basic():
     assert find_repeated_numbers(entry1, entry2) == 1, "Failed to find the first repeated number"
 
 def test_diff_sizes():
-    # Basic test, different size lists
+    # Basic test, different sized lists
     entry1 = [1, 2, 3, 4, 5, 6, 7, 8]
     entry2 = [9, 0, 8, 1]
     assert find_repeated_numbers(entry1, entry2) == 1, "Failed to find the first repeated number"
@@ -27,6 +27,7 @@ def test_empty_entry():
     assert not find_repeated_numbers(entry1, entry2), "Function should have returned None"
 
 def test_different_entries():
+    # Lists are different
     entry1 = [1, 2, 3, 4, 5]
     entry2 = [6, 7, 8, 9, 0]
     assert not find_repeated_numbers(entry1, entry2), "Function should have returned None"

@@ -20,7 +20,6 @@ def get_min_permutations(coin_flips):
 		# Generate two interspersed lists (starting with 0 and 1) of given size
 		starting_with_zero = [number % 2 for number in range(0, size)]
 		starting_with_one = [number % 2 for number in range(1, size + 1)]
-		print(starting_with_zero, starting_with_one)
 		return starting_with_zero, starting_with_one
 	
 	def calculate_changes(sample_list):

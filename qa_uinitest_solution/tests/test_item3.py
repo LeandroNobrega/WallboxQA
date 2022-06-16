@@ -1,5 +1,5 @@
 import random
-from solution3 import get_min_permutations, NotCoinFlipsException, EmptyListException
+from ..src.get_min_permutations import get_min_permutations, NotCoinFlipsException, EmptyListException
 
 
 def test_basic_one():
