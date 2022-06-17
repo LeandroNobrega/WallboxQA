@@ -46,7 +46,7 @@ def assert_coin_flips(sample):
 if __name__ == "__main__":
 	"""
 	Quick test execution
-	For full unit test of these function please refer to the README under "Pytest"
+	For full unit test execution please refer to the README under "Pytest"
 	"""
 	test_entries = [1, 0, 0, 1], [0, 1, 1, 0], [0, 1], [0, 1, 1], [0, 1, 1, 1, 1, 0, 0, 0]
 

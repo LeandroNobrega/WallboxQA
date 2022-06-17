@@ -4,8 +4,7 @@ import os
 from .file_details import FileDetails
 
 SIZE_THRESHOLD = 14*(2**20)
-#ADMIN = 'admin'
-ADMIN = 'lbn-leandro'
+ADMIN = 'admin'
 
 
 class IncorrectPathException(Exception):
@@ -27,6 +26,7 @@ def analyze_path(file_path, admin=ADMIN, size_threshold=SIZE_THRESHOLD):
 	"""
 	Find files that match conditions defined on the README, if any
 	:param file_path: path of the file system
+	:param str admin: admin username
 	:param size_threshold: integer with file size threshold
 	:return: Path of the matched file if found, None otherwise
 	"""
@@ -47,7 +47,10 @@ def analyze_path(file_path, admin=ADMIN, size_threshold=SIZE_THRESHOLD):
 
 
 if __name__ == "__main__":
-	path = "/mnt/d/DEV/Processos/Wallbox/qa_uinitest_solution/tests/resources/default_files"
-	#path = input("Input folder path: ")
+	"""
+	Quick test execution
+	For full unit test execution please refer to the README under "Pytest"
+	"""
+	path = input("Input folder path: ")
 
 	print(analyze_path(path))

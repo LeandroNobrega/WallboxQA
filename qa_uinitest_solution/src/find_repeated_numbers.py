@@ -42,7 +42,7 @@ def assert_entries(sample_lists):
 if __name__ == "__main__":
 	"""
 	Quick test execution
-	For full unit test of these function please refer to the README under "Pytest"
+	For full unit test execution please refer to the README under "Pytest"
 	"""
 	test_entries = [([1, 2, 3, 4], [5, 5, 5, 2]), ([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]), ([1, 3, 5, 7], [7])]
 	

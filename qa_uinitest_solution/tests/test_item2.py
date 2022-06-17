@@ -19,8 +19,8 @@ List of files needed:
 
 This repo has 2 Test Cases using real files (resources folder) and 2 Test Cases using Dependency Injection
 
-A simulated class for the FileDetails was created, adding objects according the list above and thus proceeding
-with the unit tests.
+A simulated class for the FileDetails was created, adding objects according to the list of file characteristics above
+and thus proceeding with the unit tests on the simulated object.
 This approach would assume that the ability of getting the information from the files is working,
 focusing only on the logic behind the information analysis.
 """
@@ -52,6 +52,6 @@ def test_diff_owner(default_file_details):
     assert not get_file_match(default_file_details), "Function failed to get the file information correctly"
 
 def test_not_executable(default_file_details):
-    # Test with file that match conditions
+    # Test with file that is not executable
     default_file_details._is_executable = False
     assert not get_file_match(default_file_details), "Function failed to get the file information correctly"
